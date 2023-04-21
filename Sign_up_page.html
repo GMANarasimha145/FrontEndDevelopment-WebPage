@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		signup
+	</title>
+	<style>
+		body
+		{
+			background-image: url('log_img.jpeg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+    mark
+    {
+      background-color: whitesmoke;
+    }
+	</style>
+	<script type="text/javascript">
+      function formvalidation() 
+    {
+        var fn = document.sampleform.fname.value;
+        var ln = document.sampleform.lname.value;
+        var mail = document.sampleform.rmail.value;
+        var mnum = document.sampleform.mnum.value;
+        var pswd = document.sampleform.passwd.value;
+        var cpswd = document.sampleform.cpasswd.value;
+        var lang = document.getElementsByName('lan[]');
+        var dob = document.sampleform.dbirth.value;
+        var i=0;
+        if (fn == '' || fn == null) {
+          alert('Please Enter your First Name');
+          return false;
+        }
+        if (ln == '' || ln == null) {
+          alert('Please Enter your Last Name');
+          return false;
+        }
+        if (mail == '' || mail == null) {
+          alert('Please Enter your Mail Id');
+          return false;
+        }
+        if (mnum == '' || mnum == null) {
+          alert('Please Enter your Mobile Number');
+          return false;
+        }
+        for (i=0;i<lang.length;i++)
+        {
+        	if (lang[i].checked)
+        	{
+        		break;
+        		return false;
+        	}
+        }
+        if (i==lang.length)
+        {
+        	alert('Please Select atleast One');
+        	return false;
+        }
+        if (dob == '' || dob == null)
+        {
+        	alert('Please Mention Your Date-of-Birth');
+        	return false;
+        }
+
+        if (pswd == '' || pswd == null) {
+          alert('Please Enter your Password');
+          return false;
+       	}
+      	if (cpswd == '' || cpswd == null) {
+          alert('Please Confirm your Password');
+          return false;
+        }
+        if (cpswd!=pswd)
+        {
+          alert('Invalid Password(Password & Confirm Password Should be Matched)');
+          return false;
+        }
+        else
+        {
+        	alert('Details Submitted');
+        	return false;
+        }                                                                                 
+
+    }
+    </script>
+</head>
+<body>
+  <table align="center" border="1" height="200%" width="50%" bgcolor="black">
+    <tr align="center">
+      <td><h2><mark>Sign-Up</mark></h2></td>
+      <td><h2 style="color:whitesmoke;"><a href="Log_in_page.html" style="text-decoration:none;">Log-In</a></h2></td>
+    </tr>
+  </table>
+	<form name="sampleform" onsubmit="formvalidation()">
+      <table border="1" align="center" bgcolor="#FOFD60" style="top:50%; left: 50%; position: absolute;  transform: translateX(-50%) translateY(-50%);">
+      	<tr>
+      		<td><b>&#9830;</b></td>
+      		<td><b>SignUp</b></td>
+      		<td><b>&#9830;</b></td>
+      	</tr>
+        <tr>
+          <td align="center">
+            <label>First Name: </label>
+          </td>
+          <td align="justify">
+            <input type="text" name="fname"/>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <label>Last Name: </label>
+          </td>
+          <td align="justify">
+            <input type="text" name="lname" />
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <label>Mail id: </label>
+          </td>
+          <td align="justify">
+            <input type="text" name="rmail" />
+          </td>
+        </tr>
+        <tr>
+          <td ro align="center">
+            <label>Mobile Number: </label>
+          </td>
+          <td align="justify">
+            <input type="text" name="mnum">
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <label>Languages <br>Known: </label>
+          </td>
+          <td>
+            <table align="center" border="1">
+            <tr>
+            <td>Telugu
+            <input type="checkbox" name="lan[]" />
+            </td>
+            <td>Hndi
+            <input type="checkbox" name="lan[]" /></td>
+            </tr>
+            <tr>
+            <td>English
+            <input type="checkbox" name="lan[]"/></td>
+            <td>Urdu
+            <input type="checkbox" name="lan[]"/></td>
+            </tr>
+            <tr>
+            <td>Tamil
+            <input type="checkbox" name="lan[]"/></td>
+            <td>Malayalam
+            <input type="checkbox" name="lan[]"/></td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+         	<td align="center">
+            <label>Date of Birth: </label>
+         	 </td>
+          	<td align="justify">
+            <input type="date" name="dbirth" min="2001-01-01" max="2030-12-31" />
+         	 </td>
+        <tr>
+        </tr>
+         	<td align="center">
+            <label>Password: </label>
+         	 </td>
+          	<td align="justify">
+            <input type="text" name="passwd" />
+         	 </td>
+        <tr>
+        	</tr>
+         	<td align="center">
+            <label>Confirm Password: </label>
+          	</td>
+         	<td align="justify">
+            <input type="text" name="cpasswd" />
+          	</td>
+        <tr>  
+          <td colspan="2" align="center">
+            <button type="submit">Sign-Up</button>
+            <button type="Clear">Clear</button>
+          </td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    		<h1 align="center" style="color: whitesmoke;">Already A Member?..<a href="Log_in_page.html" style="text-decoration: none; color:lime;">Log-In</a></h3>
+    </form>
+</body>
+</html>

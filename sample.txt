@@ -1,0 +1,4 @@
+example -> h2 <h2><u>Example: **</u></h2>
+heading -> h1 <h1><u>if Statements: </u></h1>
+definition -> h3 <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">
+</h3>

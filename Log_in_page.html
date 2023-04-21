@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		login
+	</title>
+	<style>
+		body
+		{
+			background-image: url('log_img.jpeg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+    mark
+    {
+      background-color: whitesmoke;
+    }
+	</style>
+	<script type="text/javascript">
+      function formvalidation() 
+    {
+        var mail = document.sampleform.rmail.value;
+        var pswd = document.sampleform.passwd.value;
+        var cpswd = document.sampleform.cpasswd.value;
+        var i=0;
+        if (mail == '' || mail == null) {
+          alert('Please Enter your Mail Id');
+          return false;
+        }
+        if (pswd == '' || pswd == null) {
+          alert('Please Enter your Password');
+          return false;
+       	}
+      	if (cpswd == '' || cpswd == null) {
+          alert('Please Confirm your Password');
+          return false;
+        }
+        if (cpswd!=pswd)
+        {
+          alert('Incorrect Password');
+          return false;
+        }
+
+    }
+    </script>
+</head>
+<body>
+  <table align="center" border="1" height="200%" width="50%" bgcolor="black">
+    <tr align="center">
+      <td><h2 style="color:whitesmoke"><a style="text-decoration-color:none; text-decoration:none;" href="Sign_up_page.html">Sign-Up</a></h2></td>
+      <td><h2><mark>Log-In</mark></h2></td>
+    </tr>
+  </table>
+	<form name="sampleform" onsubmit="formvalidation()">
+      <table border="1" align="center" bgcolor="#FOFD60" style="top:50%; left: 50%; position: absolute;  transform: translateX(-50%) translateY(-50%);">
+      	<tr>
+      		<td><b>&#9830;</b></td>
+      		<td><b>LogIn</b></td>
+      		<td><b>&#9830;</b></td>
+      	</tr>
+        <tr>
+          <td align="center">
+            <label>Mail id: </label>
+          </td>
+          <td align="justify">
+            <input type="text" name="rmail" />
+          </td>
+        </tr>
+        <tr>
+        </tr>
+         	<td align="center">
+            <label>Password: </label>
+         	 </td>
+          	<td align="justify">
+            <input type="text" name="passwd" />
+         	 </td>
+        <tr>
+        	</tr>
+         	<td align="center">
+            <label>Confirm Password: </label>
+          	</td>
+         	<td align="justify">
+            <input type="text" name="cpasswd" />
+          	</td>
+        <tr>  
+          <td colspan="2" align="center">
+            <button type="submit">LogIn</button>
+            <button type="Clear">Clear</button>
+          </td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    		<h1 align="center" style="color: whitesmoke;">Not A Member?..<a href="Sign_up_page.html" style="text-decoration: none; color:lime;">Sign-Up</a></h3>
+    </form>
+</body>
+</html>

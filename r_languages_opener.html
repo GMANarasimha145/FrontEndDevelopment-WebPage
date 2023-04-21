@@ -1,0 +1,1779 @@
+<html>
+
+<head>
+  <title>languages_opener</title>
+  <style type="text/css">
+  td 
+            {
+              color: whitesmoke;
+            }
+            table
+            {
+              background-color: black;
+              align-items: center;
+            }
+            .b_highlight
+            {
+              background-color: black; 
+              color:white;
+              text-align: center;
+            }
+            .d_highlight
+            {
+              text-indent : 30;
+              text-align: left;
+              font-size: 25px; 
+              background-image: url('c_bg.jpeg'); 
+              color: whitesmoke;
+            }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+</head>
+
+<body bgcolor="#FFB6C1">
+  <h1 style="text-align:center ; color: black; opacity: initial;">
+    <u id="start">R PROGRAMMING LANGUAGE</u>
+  </h1>
+  <hr size="5" noshade="5">
+  <h1 align="center">
+    <u>
+      <i>CREATORS OF R LANGUAGE</i>
+    </u>
+  </h1>
+  <table align="justify" border="0">
+    <tr>
+      <td>
+        <p style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">
+          <u>R is an open-source implementation of the S programming language combined with lexical scoping semantics from Scheme, which allow objects to be defined in predetermined blocks rather than the entirety of the code. S was created by Rick Becker, John Chambers, Doug Dunn, Jean McRae, and Judy Schilling at Bell Labs around 1976. Designed for statistical analysis, the language is an interpreted language whose code could be directly run without a compiler. Many programs written for S run unaltered in R. As a dialect of the Lisp language, Scheme was created by Gerald J. Sussman and Guy L. Steele Jr. at MIT around 1975.
+          In 1991, statisticians Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, embarked on an S implementation. It was named partly after the first names of the first two R authors and partly as a play on the name of S. They began publicizing it on the data archive StatLib and the s-news mailing list in August 1993. In 1995, statistician Martin Mächler convinced Ihaka and Gentleman to make R free and open-source software under the GNU General Public License. The first official release came in June 1995. The first official "stable beta" version (v1.0) was released on 29 February 2000.</p>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td>
+              <img src="R_Lan_inv.jpeg" height="235" width="220">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h2 align="center">
+                Ross Ihaka <br>&<br> Robert Gentleman</h2>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p style="font-size: 25px; text-indent:30; font-family: bold; background-image: url('c_bg.jpeg'); color: whitesmoke;">The Comprehensive R Archive Network (CRAN) was officially announced on 23 April 1997. CRAN stores R's executable files, source code, documentations, as well as packages contributed by users. CRAN originally had 3 mirrors and 12 contributed packages. As of January 2022, it has 101 mirrors and 18,728 contributed packages. In addition to hosting packages CRAN hosts binaries for major distributions of Linux, MacOS and Windows.</p>
+  <hr size="5" noshade="5">
+  <marquee direction="up" scrollamount="57">
+    <img src="r_logo_png.png" height="200" width="200" style="display: block;margin-left: auto; margin-right: auto;">
+  </marquee>
+  <hr size="5" noshade="5">
+  <h1 align="center">
+    <u>
+      <i>HISTORY OF R LANGUAGE</i>
+    </u>
+  </h1>
+  <p style="font-size: 25px; text-indent:30; font-family: bold; background-image: url('    c_bg.jpeg'); color: whitesmoke;">The R Core Team was formed in 1997 to further develop the language. As of January 2022, it consists of Chambers, Gentleman, Ihaka, and Mächler, plus statisticians Douglas Bates, Peter Dalgaard, Kurt Hornik, Michael Lawrence, Friedrich Leisch, Uwe Ligges, Thomas Lumley, Sebastian Meyer, Paul Murrell, Martyn Plummer, Brian Ripley, Deepayan Sarkar, Duncan Temple Lang, Luke Tierney, and Simon Urbanek, as well as computer scientist Tomas Kalibera. Stefano Iacus, Guido Masarotto, Heiner Schwarte, Seth Falcon, Martin Morgan, and Duncan Murdoch were members.In April 2003, the R Foundation was founded as a non-profit organization to provide further support for the R projectThe R Core Team was formed in 1997 to further develop the language. As of January 2022, it consists of Chambers, Gentleman, Ihaka, and Mächler, plus statisticians Douglas Bates, Peter Dalgaard, Kurt Hornik, Michael Lawrence, Friedrich Leisch, Uwe Ligges, Thomas Lumley, Sebastian Meyer, Paul Murrell, Martyn Plummer, Brian Ripley, Deepayan Sarkar, Duncan Temple Lang, Luke Tierney, and Simon Urbanek, as well as computer scientist Tomas Kalibera. Stefano Iacus, Guido Masarotto, Heiner Schwarte, Seth Falcon, Martin Morgan, and Duncan Murdoch were members. In April 2003, the R Foundation was founded as a non-profit organization to provide further support for the R project</p>
+  <h2>
+    <u>Example: **</u>
+  </h2>
+<pre><code>
+  print("Hello World!")
+	for (x in 1:10) {
+  print(x)
+}
+</code></pre>
+  <hr size="5" noshade="5">
+  <h1 align="center" style="background-color: black; color:white;">Keywords & Identifiers</h1>
+  <dl>
+    <dt>
+      <h2>
+        <b>
+          <u>KEYWORDS IN R:</u>
+        </b>
+      </h2>
+    </dt>
+    <dd>
+      <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">Keywords are predefined, reserved words used in programming that have special meanings to the compiler. Keywords are part of the syntax and they cannot be used as an identifier.</h3>
+    </dd>
+  </dl>
+  <table border="1" align="center" bgcolor="white" style="width:40%; height: 40%;">
+      <tr><td>if</td> <td>else</td> <td>while</td> <td>repeat</td></tr>
+      <tr><td>for</td> <td>function</td> <td>in</td> <td>next</td></tr>
+      <tr><td>break</td> <td>TRUE</td> <td>FALSE</td> <td>NULL</td></tr>
+      <tr><td>Inf</td> <td>NaN</td> <td>NA</td> <td>NA_integer</td></tr>
+      <tr><td>NA_real</td> <td>NA_complex_</td> <td>NA_character_</td> <td>…</td></tr>
+  </table>
+  <dl>
+    <dt>
+      <h2>
+        <b>
+          <u>IDENTIFIERS IN R:</u>
+        </b>
+      </h2>
+    </dt>
+    <dd>
+      <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">Identifier refers to name given to entities such as variables, functions, structures etc. Identifiers must be unique. They are created to give a unique name to an entity to identify it during the execution of the program.</h3>
+    </dd>
+  </dl>
+  <b>
+    <u>
+      <h2>Rules for naming identifiers</u>
+  </b>
+  </h2>
+  <ol>
+    <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">
+      <li>A valid identifier can have letters (both uppercase and lowercase letters), digits and underscores.</li>
+      <li>The first letter of an identifier should be either a letter or an underscore.</li>
+      <li>You cannot use keywords like int, while etc. as identifiers.</li>
+      <li>There is no rule on how long an identifier can be. However, you may run into problems in some compilers if the identifier is longer than 31 characters.</li>
+    </h3>
+  </ol>
+  <h2>
+    <u>Example Snippet: **</u>
+  </h2> <pre>
+    <td>
+    <code>
+    x <- 5
+  
+    # Check value is less than or greater than 10 
+    if(x > 10)
+    { 
+        print(paste(x, "is greater than 10")) 
+    }
+    else
+    { 
+        print(paste(x, "is less than 10")) 
+    }
+    </code>
+  </pre>
+  <h2 class="b_highlight">DATA TYPES IN R:</h2>
+  <h3 class="d_highlight">
+    In programming, data type is an important concept.<br>
+
+Variables can store data of different types, and different types can do different things.<br>
+
+In R, variables do not need to be declared with any particular type, and can even change type after they have been set:
+  </h3>
+  <h3 class="d_highlight">
+  <ul>
+    <li>numeric - (10.5, 55, 787)</li>
+    <li>integer - (1L, 55L, 100L, where the letter "L"</li>
+    <li>complex - (9 + 3i, where "i" is the imaginary part)</li>
+    <li>character (a.k.a. string) - ("k", "R is exciting", "FALSE", "11.5")</li>
+    <li>logical (a.k.a. boolean) - (TRUE or FALSE)</li>
+    <li>We can use the class() function to check the data type of a variable</li>
+  </ul>
+</h3>
+  <pre>
+      <code>
+        # numeric
+        x <- 10.5
+        class(x)
+
+        # integer
+        x <- 1000L
+        class(x)
+
+        # complex
+        x <- 9i + 3
+        class(x)
+
+        # character/string
+        x <- "R is exciting"
+        class(x)
+
+        # logical/boolean
+        x <- TRUE
+        class(x)
+      </code>
+    </pre>
+  <h2 class="b_highlight">OPERATORS IN R</h2>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">Operators are used to perform operations on variables and values.</h3>
+  <h2>
+    <u>ARITHMETIC OPERATORS</u>
+  </h2>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">Arithmetic operators are used to perform common mathematical operations.</h3>
+  <table border="1" align="center">
+    <tr>
+      <td>Operator</td>
+      <td>Name</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>Addition</td>
+      <td>Adds together</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>Subtraction</td>
+      <td>Subtracts one from another</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>Multiplication</td>
+      <td>Multiplies Together</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Divison</td>
+      <td>Divides one value by another</td>
+    </tr>
+    <tr>
+      <td>%%</td>
+      <td>Modulus(Remainder from division)</td>
+      <td>Returns the Divison Remainder</td>
+    </tr>
+    <tr>
+      <td>%/%</td>
+      <td>Integer Division</td>
+      <td>Returns the floor Remainder</td>
+    </tr>
+  </table>
+  <h2>
+    <u>ASSIGNMENT OPERATORS</u>
+  </h2>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">Assignment operators are used to assign values to variables.</h3>
+  <table border="1" align="center">
+    <tr>
+      <td>Operator</td>
+      <td>Example</td>
+    </tr>
+    <tr>
+      <td>=</td>
+      <td>x=5</td>
+    </tr>
+    <tr>
+      <td>+=</td>
+      <td>x+=5</td>
+    </tr>
+    <tr>
+      <td>+=</td>
+      <td>x+=5</td>
+    </tr>
+    <tr>
+      <td>-=</td>
+      <td>x-=5</td>
+    </tr>
+    <tr>
+      <td>*=</td>
+      <td>x*=5</td>
+    </tr>
+    <tr>
+      <td>/=</td>
+      <td>x/=5</td>
+    </tr>
+    <tr>
+      <td>&=</td>
+      <td>x&=5</td>
+    </tr>
+    <tr>
+      <td>|=</td>
+      <td>x|=5</td>
+    </tr>
+  </table>
+  <table border="1" align="center">
+    <h2>
+      <u>COMPARISION OPERATORS</u>
+    </h2>
+    <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">Comparison operators are used to compare two values.</h3>
+    <tr>
+      <td>Operator</td>
+      <td>Name</td>
+    </tr>
+    <tr>
+      <td>==</td>
+      <td>Equal to</td>
+    </tr>
+    <tr>
+      <td>!=</td>
+      <td>Not Equal to</td>
+    </tr>
+    <tr>
+      <td>></td>
+      <td>Greater than</td>
+    </tr>
+    <tr>
+      <td>
+        <</td>
+          <td>Less than</td>
+    </tr>
+    <tr>
+      <td>>=</td>
+      <td>Greater Than or Equal to</td>
+    </tr>
+    <tr>
+      <td>
+        <=</td>
+          <td>Less Than or Equal to</td>
+    </tr>
+  </table>
+  <h2>
+    <u>LOGICAL OPERATORS</u>
+  </h2>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">Logical operators are used to determine the logic between variables or values:</h3>
+  <table border="1" align="center">
+    <tr>
+      <td>Operator</td>
+      <td>Name</td>
+      <td>Description</td>
+    </tr>
+    <tr>
+      <td>&&</td>
+      <td>Logical AND</td>
+      <td>Returns true if both statements are true</td>
+    </tr>
+    <tr>
+      <td>||</td>
+      <td>Logical OR</td>
+      <td>Returns true if one of the statements is true</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>Logical NOT</td>
+      <td>Reverse the result, returns false if the result is true</td>
+    </tr>
+    <tr>
+    <td>&</td>
+      <td>Element WiseLogical AND</td>
+      <td>Returns TRUE if both elements are TRUE</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>Element WiseLogical OR</td>
+      <td>Returns TRUE if one of the statement is TRUE</td>
+    </tr>
+  </table>
+  <h1><u>R Miscellaneous Operators</u></h1>
+  <h2>
+    <h3 class="d_highlight">Miscellaneous operators are used to manipulate data:</h3>
+    <table border="1" align="center">
+      <tr>
+        <td>Operator</td>
+        <td>Description</td>
+        <td>Example</td>
+      </tr>
+      <tr>
+        <td>:</td>
+        <td>Creates a series of numbers in a sequence</td>
+        <td>x <- 1:10</td>
+      </tr>
+     <tr>
+       <td>%in%</td>
+       <td> Find out if an element belongs to a vector</td>
+       <td>x %in% y</td>
+     </tr>
+     <tr>
+       <td>%*%</td>
+       <td> Matrix Multiplication</td>
+       <td>x <- Matrix1 %*% Matrix2</td>
+     </tr>
+    </table>
+    <h2>
+    <u>Example: **</u>
+  </h2> 
+  <pre><code>
+    vec1 <- c(0, 2)
+    vec2 <- c(2, 3)
+     
+    # Performing operations on Operands
+    cat ("Addition of vectors :", vec1 + vec2, "\n")
+    cat ("Subtraction of vectors :", vec1 - vec2, "\n")
+    cat ("Multiplication of vectors :", vec1 * vec2, "\n")
+    cat ("Division of vectors :", vec1 / vec2, "\n")
+    cat ("Modulo of vectors :", vec1 %% vec2, "\n")
+    cat ("Power operator :", vec1 ^ vec2)
+  </code></pre>
+  <h2 class="b_highlight">R Output (Print Text)</h2>
+  <h3 class="d_highlight">Most common method to print output in R program, there is a function called print() is used. Also if the program of R is written over the console line by line then the output is printed normally, no need to use any function for print that output. To do this just select the output variable and press run button.</h3> <pre>
+    <code>
+      	# R program to illustrate
+        # printing output of an R program
+         
+        # print string
+        print("FL")
+         
+        # print variable
+        # it will print 'ForLingo' on the console
+        x <- "ForLingo"
+        print(x)
+    </code>
+   </pre>
+  <h2 class="b_highlight">R Input</h2>
+  <h3 class="d_highlight">When we are working with R in an interactive session, we can use readline() function to take input from the user (terminal).
+
+This function will return a single element character vector.
+
+So, if we want numbers, we need to do appropriate conversions.</h3> <pre>
+    <code>
+      	my.name <- readline(prompt="Enter name: ")
+        my.age <- readline(prompt="Enter age: ")
+        # convert character into integer
+        my.age <- as.integer(my.age)
+        print(paste("Hi,", my.name, "next year you will be", my.age+1, "years old."))
+    </code>
+   </pre>
+  <h2 class="b_highlight">R Variables</h2>
+  <h3 class="d_highlight">Variables are containers for storing data values.
+
+R does not have a command for declaring a variable. A variable is created the moment you first assign a value to it. To assign a value to a variable, use the <- sign. To output (or print) the variable value, just type the variable name:
+    <h2><u>Example: **</u></h2> <pre><code>
+      name <- "John"
+      age <- 40
+
+      name   # output "John"
+      age    # output 40
+    </code></pre>
+  </h3>
+  <h2 class="b_highlight">CONTROL STATEMENTS IN R</h2>
+  <h2>
+    <ol>
+      <li>if Statements</li>
+      <li>Switch Statements</li>
+      <li>Jumping Statemets</li>
+      <li>Looping Statements</li>
+    </ol>
+  </h2>
+  <h1>
+    <u>if Statements:</u>
+  </h1>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">This type of statement would enable a programmer to choose various instruction sets on the basis of the available condition. The instruction sets will only get executed when the evaluation of the condition turns out to be true. In case the evaluation of the condition is false, there will be an execution of a different instruction set. These are also known as decision control statements. These are of the following types: Simple else or Null else If… else Else If Ladder</h3>
+  <h2>
+    <u>Example: **</u>
+  </h2> <pre>
+    <code>
+      	a <- 200
+        b <- 33
+
+        if (b > a) {
+          print("b is greater than a")
+        } else if (a == b) {
+          print("a and b are equal")
+        } else {
+          print("a is greater than b")
+        }
+        if (b > a) {
+          print("b is greater than a")
+        } else {
+          print("b is not greater than a")
+        }
+    </code>
+  </pre>
+  <h1>
+    <u>Switch Statements:</u>
+  </h1>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">The Rlanguage offers its users with a selection statement in various ways in case a program becomes difficult to read with an increased number of conditions. A switch statement is a multi-way type of selection statement that would resolve this issue. The switch declaration comes into play when more than three alternatives (conditions) exist in a program. This command then switches between all the available blocks on the basis of the expression value. Then, each block has a corresponding value with it.</h3>
+  <h2>
+    <u>Example: **</u>
+  </h2> <pre>
+    <code>
+		val1 = 6  
+    val2 = 7
+    val3 = "s"  
+    result = switch(  
+        val3,  
+        "a"= cat("Addition =", val1 + val2),  
+        "d"= cat("Subtraction =", val1 - val2),  
+        "r"= cat("Division = ", val1 / val2),  
+        "s"= cat("Multiplication =", val1 * val2),
+        "m"= cat("Modulus =", val1 %% val2),
+        "p"= cat("Power =", val1 ^ val2)
+    )  
+        
+    print(result)
+    </code>
+  </pre>
+  <h1>
+    <u>Jumping Statements</u>
+  </h1>
+  <h2>
+  </h2>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;"></h3>
+  <h1>
+    <h1><u>Break</u></h1>
+    <h3 class="d_highlight">
+      With the break statement, we can stop the loop even if the while condition is TRUE:
+    </h3>
+    <h1><u>Example: **</u></h1>
+    <pre><code>
+      i <- 1
+      while (i < 6) {
+        print(i)
+        i <- i + 1
+        if (i == 4) {
+          break
+        }
+      }
+    </code></pre>
+    <h1><u>Next</u></h1>
+    <h3 class="d_highlight">
+      With the next statement, we can skip an iteration without terminating the loop:
+    </h3>
+    <h1><u>Example: **</u></h1>
+    <pre><code>
+      i <- 0
+      while (i < 6) {
+        i <- i + 1
+        if (i == 3) {
+          next
+        }
+        print(i)
+      }
+    </code></pre>
+    <u>Looping Statements</u>
+  </h1>
+  <h1>
+    <u>while loop:</u>
+  </h1>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">With the while loop we can execute a set of statements as long as a condition is TRUE:</h3>
+  <h2>
+    <u>Example: **</u>
+  </h2> <pre>
+    <code>
+      	i <- 1
+        while (i < 6) {
+          print(i)
+          i <- i + 1
+        }
+    </code>
+  </pre>
+  <h1>
+    <u>for loop:</u>
+  </h1>
+  <h3 style=" text-indent : 30;text-align: left;font-size: 25px; background-image: url('c_bg.jpeg'); color: whitesmoke;">A for loop is used for iterating over a sequence:
+  </h3>
+  <h2>
+    <u>Example: **</u>
+  </h2>
+  <pre>
+    <code>
+      	fruits <- list("apple", "banana", "cherry")
+
+        for (x in fruits) {
+          print(x)
+        }
+      </code>
+  </pre>
+<h2 class="b_highlight">R Functions</h2>
+<h3 class="d_highlight">
+  A function is a block of code which only runs when it is called.
+
+You can pass data, known as parameters, into a function.
+
+A function can return data as a result.
+</h3>
+<h1><u>Creating a Function</u></h1>
+<h3 class="d_highlight">
+  To create a function, use the function() keyword:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  my_function <- function() { # create a function with the name my_function
+  print("Hello World!")
+}
+</code></pre>
+<h2><u>Call a Function</u></h2>
+<h3 class="d_highlight">
+  To call a function, use the function name followed by parenthesis, like my_function():
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  my_function <- function() {
+  print("Hello World!")
+}
+
+my_function() # call the function named my_function
+</code></pre>
+<h1><u>Arguments</u></h1>
+<h3 class="d_highlight">
+  Information can be passed into functions as arguments.
+
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  my_function <- function(fname) {
+  paste(fname, "Griffin")
+}
+
+  my_function("Peter")
+  my_function("Lois")
+  my_function("Stewie")
+</code></pre>
+<h2 class="b_highlight">R Global Variables</h2>
+<h3 class="d_highlight">
+  Variables that are created outside of a function are known as global variables.
+
+Global variables can be used by everyone, both inside of functions and outside.
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  txt <- "awesome"
+  my_function <- function() {
+    paste("R is", txt)
+  }
+
+  my_function()
+</code></pre>
+<h2 class="b_highlight">R Math Functions</h2>
+<h3 class="d_highlight">
+  R also has many built-in math functions that allows you to perform mathematical tasks on numbers.
+
+For example, the min() and max() functions can be used to find the lowest or highest number in a set:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  max(5, 10, 15) #maximum value
+  min(5, 10, 15) #minimum value
+  sqrt(16) #square root of number
+  abs(-4.7) #absolute value of number
+  ceiling(1.4) #rounds a number upward
+  floor(1.4) #rounds a number downwards
+</code></pre>
+<h2 class="b_highlight">Data Structures</h2>
+<h1><u>Vectors: </u></h1>
+<h3 class="d_highlight">
+  A vector is simply a list of items that are of the same type.
+
+To combine the list of items to a vector, use the c() function and separate the items by a comma.
+
+In the example below, we create a vector variable called fruits, that combine strings:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  # Vector of strings
+  fruits <- c("banana", "apple", "orange")
+
+  # Print fruits
+  fruits
+
+  #vector with sequence
+  numbers <- 1:10
+
+  numbers
+  length(numbers)s
+</code></pre>
+<h1><u>Lists: </u></h1>
+<h3 class="d_highlight">
+  A list in R can contain many different data types inside it. A list is a collection of data which is ordered and changeable.
+
+To create a list, use the list() function:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  # List of strings
+  thislist <- list("apple", "banana", "cherry")
+
+  # Print the list
+  thislist
+</code></pre>
+<h1><u>Access Lists: </u></h1>
+<h3 class="d_highlight">
+  You can access the list items by referring to its index number, inside brackets. The first item has index 1, the second item has index 2, and so on:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  thislist <- list("apple", "banana", "cherry")
+
+  thislist[1]
+</code></pre>
+<h1><u>Change Item Value: </u></h1>
+<h3 class="d_highlight">
+  To change the value of a specific item, refer to the index number:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  thislist <- list("apple", "banana", "cherry")
+  thislist[1] <- "blackcurrant"
+
+  # Print the updated list
+  thislist
+</code></pre>
+<h2 class="b_highlight">R Matrices</h2>
+<h3 class="d_highlight">
+  A matrix is a two dimensional data set with columns and rows.
+
+A column is a vertical representation of data, while a row is a horizontal representation of data.
+
+A matrix can be created with the matrix() function. Specify the nrow and ncol parameters to get the amount of rows and columns:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  # Create a matrix
+  thismatrix <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)
+
+  # Print the matrix
+  thismatrix
+</code></pre>
+<h1><u>Access Matrix Items: </u></h1>
+<h3 class="d_highlight">
+  You can access the items by using [ ] brackets. The first number "1" in the bracket specifies the row-position, while the second number "2" specifies the column-position:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  thismatrix <- matrix(c("apple", "banana", "cherry", "orange"), nrow = 2, ncol = 2)
+
+  thismatrix[1, 2]
+</code></pre>
+<h3 class="d_highlight">
+  The whole row can be accessed if you specify a comma after the number in the bracket:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  thismatrix <- matrix(c("apple", "banana", "cherry", "orange"), nrow = 2, ncol = 2)
+  thismatrix[2,] #2nd row will be printed
+  thismatrix[,2] #2nd column will be printed
+</code></pre>
+<h1><u>Access More Than One Row and Column: </u></h1>
+<h3 class="d_highlight">
+  More than one row can be accessed if you use the c() function:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  thismatrix <- matrix(c("apple", "banana", "cherry", "orange","grape", "pineapple", "pear", "melon", "fig"), nrow = 3, ncol = 3)
+
+  thismatrix[c(1,2),]
+  thismatrix[,c(1,2)]
+</code></pre>
+<h2 class="b_highlight">ARRAYS IN R</h2>
+  <h1>
+    <u>ARRAYS</u>
+  </h1>
+  <h3 class="d_highlight">Compared to matrices, arrays can have more than two dimensions.
+
+We can use the array() function to create an array, and the dim parameter to specify the dimensions:</h3>
+    <u>Example: **</u>
+  </h2> <pre>
+    <code>
+      	# An array with one dimension with values ranging from 1 to 24
+        thisarray <- c(1:24)
+        thisarray
+
+        # An array with more than one dimension
+        multiarray <- array(thisarray, dim = c(4, 3, 2))
+        multiarray
+    </code>
+  </pre>
+  <h1><u>Accessing Array Elements: </u></h1>
+  <h3 class="d_highlight">
+    You can access the array elements by referring to the index position. You can use the [] brackets to access the desired elements from an array:
+  </h3>
+    <u>Example:</u>
+  </h2> <pre>
+    <code>
+    thisarray <- c(1:24)
+    multiarray <- array(thisarray, dim = c(4, 3, 2))
+
+    multiarray[2, 3, 2]
+    </code>
+  </pre>
+  <h1><u>MultiDimensional Array: </u></h1>
+  <h2><u>Example: **</u></h2>
+  <pre><code>
+    thisarray <- c(1:24)
+
+    # Access all the items from the first row from matrix one
+    multiarray <- array(thisarray, dim = c(4, 3, 2))
+    multiarray[c(1),,1]
+
+    # Access all the items from the first column from matrix one
+    multiarray <- array(thisarray, dim = c(4, 3, 2))
+    multiarray[,c(1),1]
+  </code></pre>
+  <h1><u>Loop through Array: </u></h1>
+  <h2><u>Example: **</u></h2>
+  <pre><code>
+    thisarray <- c(1:24)
+    multiarray <- array(thisarray, dim = c(4, 3, 2))
+
+    for(x in multiarray){
+      print(x)
+    }
+  </code></pre>
+  <h2 class="b_highlight">Data Frames</h2>
+  <h3 class="d_highlight">
+    Data Frames are data displayed in a format as a table.
+
+Data Frames can have different types of data inside it. While the first column can be character, the second and third can be numeric or logical. However, each column should have the same type of data.
+
+Use the data.frame() function to create a data frame:
+  </h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  # Create a data frame
+  Data_Frame <- data.frame (
+    Training = c("Strength", "Stamina", "Other"),
+    Pulse = c(100, 150, 120),
+    Duration = c(60, 30, 45)
+  )
+
+  # Print the data frame
+  Data_Frame
+</code></pre>
+<h1><u>Summarize the Data: </u></h1>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+  )
+
+  Data_Frame
+
+  summary(Data_Frame)
+</code></pre>
+<h1><u>Access Items: </u></h1>
+<h3 class="d_highlight">
+  We can use single brackets [ ], double brackets [[ ]] or $ to access columns from a data frame:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+  )
+
+  Data_Frame[1]
+
+  Data_Frame[["Training"]]
+
+  Data_Frame$Training
+</code></pre>
+<h1><u>Add Rows: </u></h1>
+<h3 class="d_highlight">
+  Use the rbind() function to add new rows in a Data Frame:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+  )
+
+  # Add a new row
+  New_row_DF <- rbind(Data_Frame, c("Strength", 110, 110))
+
+  # Print the new row
+  New_row_DF
+</code></pre>
+<h1><u>Add Columns: </u></h1>
+<h3 class="d_highlight">
+  Use the cbind() function to add new columns in a Data Frame:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+  )
+
+  # Add a new column
+  New_col_DF <- cbind(Data_Frame, Steps = c(1000, 6000, 2000))
+
+  # Print the new column
+  New_col_DF
+</code></pre>
+<h1><u>Remove Rows and Columns: </u></h1>
+<h3 class="d_highlight">
+  Use the c() function to remove rows and columns in a Data Frame:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+  )
+
+  # Remove the first row and column
+  Data_Frame_New <- Data_Frame[-c(1), -c(1)]
+
+  # Print the new data frame
+  Data_Frame_New
+</code></pre>
+<h2 class="b_highlight">R Factors</h2>
+<h3 class="d_highlight">
+  Factors are used to categorize data. Examples of factors are:
+  <ul>
+<li>Demography: Male/Female</li>
+<li>Music: Rock, Pop, Classic, Jazz</li>
+<li>Training: Strength, Stamina</li>
+</ul>
+To create a factor, use the factor() function and add a vector as argument:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  # Create a factor
+  music_genre <- factor(c("Jazz", "Rock", "Classic", "Classic", "Pop", "Jazz", "Rock", "Jazz"))
+
+  # Print the factor
+  music_genre
+</code></pre>
+<h3 class="d_highlight">
+  You can see from the example above that that the factor has four levels (categories): Classic, Jazz, Pop and Rock.
+
+To only print the levels, use the levels() function:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  music_genre <- factor(c("Jazz", "Rock", "Classic", "Classic", "Pop", "Jazz", "Rock", "Jazz"))
+
+  levels(music_genre)
+</code></pre>
+<h3 class="d_highlight">
+  You can also set the levels, by adding the levels argument inside the factor() function:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  music_genre <- factor(c("Jazz", "Rock", "Classic", "Classic", "Pop", "Jazz", "Rock", "Jazz"), levels = c("Classic", "Jazz", "Pop", "Rock", "Other"))
+
+  levels(music_genre)
+</code></pre>
+  <h2 class="b_highlight">STRINGS IN R</h2>
+  <h3 class="d_highlight">Strings are used for storing text.
+
+A string is surrounded by either single quotation marks, or double quotation marks:
+
+"hello" is the same as 'hello':</h3> 
+<pre><code>
+        	str <- "Hello"
+          str # print the value of str
+      </code></pre>
+<h1><u>Multiline Strings: </u></h1>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  str <- "Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua."
+
+  str # print the value of str
+</code></pre>
+<h3 class="d_highlight">
+  However, note that R will add a "\n" at the end of each line break. This is called an escape character, and the n character indicates a new line.
+
+If you want the line breaks to be inserted at the same position as in the code, use the cat() function:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  str <- "Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt
+  ut labore et dolore magna aliqua."
+
+  cat(str)
+</code></pre>
+<h2 class="b_highlight">R Graphics</h2>
+<h1><u>R Plotting: </u></h1>
+<h3 class="d_highlight">
+  The plot() function is used to draw points (markers) in a diagram.<br>
+
+The function takes parameters for specifying points in the diagram.<br>
+
+Parameter 1 specifies points on the x-axis.<br>
+
+Parameter 2 specifies points on the y-axis.<br>
+
+At its simplest, you can use the plot() function to plot two numbers against each other:
+</h3>
+<h2><u>Example: **</u></h2>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+        # Draw one point in the diagram, at position (1) and position (3):
+
+
+          plot(1, 3)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot1.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h2><u>Example: **</u></h2>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          #Draw two points in the diagram one at position (1, 3) and one in position (8, 10):
+
+        
+          plot(c(1, 8), c(3, 10))
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot2.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Multiple Points: </u></h1>
+<h3 class="d_highlight">
+  You can plot as many points as you like, just make sure you have the same number of points in both axis:
+</h3>
+<h2><u>Example: **</u></h2>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          #You can plot as many points as you like, just make sure you have the same number of points in both axis:
+
+
+          plot(c(1, 2, 3, 4, 5), c(3, 7, 8, 9, 12))
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot3.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h2><u>Example: **</u></h2>
+<h3 class="d_highlight">For better organization, when you have many values, it is better to use variables:</h3>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          x <- c(1, 2, 3, 4, 5)
+          y <- c(3, 7, 8, 9, 12)
+
+          plot(x, y)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot4.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Draw a Line: </u></h1>
+<h3 class="d_highlight">
+  The plot() function also takes a type parameter with the value l to draw a line to connect all the points in the diagram:
+</h3>
+<h2><u>Example: **</u></h2>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          plot(1:10, type="l")
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot5.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Line Width: </u></h1>
+<h3 class="d_highlight">To change the width of the line, use the lwd parameter (1 is default, while 0.5 means 50% smaller, and 2 means 100% larger):</h3>
+  <table>
+  <h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          plot(1:10, type="l", lwd=2)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot_l_width.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+
+<h1><u>Line Styles: </u></h1>
+<h3 class="d_highlight">The line is solid by default. Use the lty parameter with a value from 0 to 6 to specify the line format.
+
+For example, lty=3 will display a dotted line instead of a solid line:</h3>
+  <table>
+  <h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          plot(1:10, type="l", lwd=5, lty=3)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot_dotted.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h3 class="d_highlight"><u>
+  Available parameter values for lty:
+  <ul>
+    <li>0 removes the line</li>
+    <li>1 displays a solid line</li>
+    <li>2 displays a dashed line</li>
+    <li>3 displays a dotted line</li>
+    <li>4 displays a "dot dashed" line</li>
+    <li>5 displays a "long dashed" line</li>
+    <li>6 displays a "two dashed" line</li>
+  </ul>
+</u></h3>
+<h1><u>Multiple Lines: </u></h1>
+<h3 class="d_highlight">
+  To display more than one line in a graph, use the plot() function together with the lines() function:
+</h3>
+  <h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          line1 <- c(1,2,3,4,5,10)
+          line2 <- c(2,5,7,8,9,10)
+
+          plot(line1, type = "l", col = "blue")
+          lines(line2, type="l", col = "red")
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot_multi.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Graph Appearance: </u></h1>
+<h3 class="d_highlight">
+  There are many other parameters you can use to change the appearance of the points.
+</h3>
+<h1><u>Colors: </u></h1>
+<h3 class="d_highlight">Use col="color" to add a color to the points:</h3>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          plot(1:10, col="red")
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot6.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Size: </u></h1>
+<h3 class="d_highlight">
+  Use cex=number to change the size of the points (1 is default, while 0.5 means 50% smaller, and 2 means 100% larger):
+</h3>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          plot(1:10, cex=2)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot7.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Point Shape: </u></h1>
+<h3 class="d_highlight">
+  Use pch with a value from 0 to 25 to change the point shape format:
+</h3>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          plot(1:10, pch=25, cex=2)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_plot8.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h3 class="d_highlight">
+  The values of the pch parameter ranges from 0 to 25, which means that we can choose up to 26 different types of point shapes:
+</h3>
+<table align="center">
+  <tr>
+    <td>
+      <img src="r_shape.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h2 class="b_highlight">R Scatter Plot</h2>
+<h3 class="d_highlight">
+  You learned from the Plot chapter that the plot() function is used to plot numbers against each other.<br>
+
+A "scatter plot" is a type of plot used to display the relationship between two numerical variables, and plots one dot for each observation.<br>
+
+It needs two vectors of same length, one for the x-axis (horizontal) and one for the y-axis (vertical):
+</h3>
+<h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          x <- c(5,7,8,7,2,2,9,4,11,12,9,6)
+          y <- c(99,86,87,88,111,103,87,94,78,77,85,86)
+
+          plot(x, y)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_scatterplot.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h3 class="d_highlight">
+  The observation in the example above should show the result of 12 cars passing by.
+
+That might not be clear for someone who sees the graph for the first time, so let's add a header and different labels to describe the scatter plot better:
+</h3>
+<h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          x <- c(5,7,8,7,2,2,9,4,11,12,9,6)
+          y <- c(99,86,87,88,111,103,87,94,78,77,85,86)
+
+          plot(x, y, main="Observation of Cars", xlab="Car age", ylab="Car speed")
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_scatterplot_car.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h3 class="d_highlight">
+  To recap, the observation in the example above is the result of 12 cars passing by.
+
+The x-axis shows how old the car is.
+
+The y-axis shows the speed of the car when it passes.
+
+Are there any relationships between the observations?
+
+It seems that the newer the car, the faster it drives, but that could be a coincidence, after all we only registered 12 cars.
+</h3>
+<h1><u>Compare Plots: </u></h1>
+<h3 class="d_highlight">
+  In the example above, there seems to be a relationship between the car speed and age, but what if we plot the observations from another day as well? Will the scatter plot tell us something else?
+
+To compare the plot with another plot, use the points() function:
+</h3>
+<h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          # day one, the age and speed of 12 cars:
+          x1 <- c(5,7,8,7,2,2,9,4,11,12,9,6)
+          y1 <- c(99,86,87,88,111,103,87,94,78,77,85,86)
+
+          # day two, the age and speed of 15 cars:
+          x2 <- c(2,2,8,1,15,8,12,9,7,3,11,4,7,14,12)
+          y2 <- c(100,105,84,105,90,99,90,95,94,100,79,112,91,80,85)
+
+          plot(x1, y1, main="Observation of Cars", xlab="Car age", ylab="Car speed", col="red", cex=2)
+          points(x2, y2, col="blue", cex=2)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_scatterplot_car2.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h2 class="b_highlight">R Pie Charts</h2>
+<h3 class="d_highlight">
+  A pie chart is a circular graphical view of data.
+
+Use the pie() function to draw pie charts:
+</h3>
+<h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          # Create a vector of pies
+          x <- c(10,20,30,40)
+
+          # Display the pie chart
+          pie(x)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_pie.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h3 class="d_highlight">
+  As you can see the pie chart draws one pie for each value in the vector (in this case 10, 20, 30, 40).
+
+By default, the plotting of the first pie starts from the x-axis and move counterclockwise.
+</h3>
+<h1><u>Start Angle: </u></h1>
+<h3 class="d_highlight">
+  You can change the start angle of the pie chart with the init.angle parameter.
+
+The value of init.angle is defined with angle in degrees, where default angle is 0.
+</h3>
+<h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          # Create a vector of pies
+          x <- c(10,20,30,40)
+
+          # Display the pie chart and start the first pie at 90 degrees
+          pie(x, init.angle = 90)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_pie_angle.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Labels and Header: </u></h1>
+<h3 class="d_highlight">
+  Use the label parameter to add a label to the pie chart, and use the main parameter to add a header:
+</h3><h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          # Create a vector of pies
+          x <- c(10,20,30,40)
+
+          # Create a vector of labels
+          mylabel <- c("Apples", "Bananas", "Cherries", "Dates")
+
+          # Display the pie chart with labels
+          pie(x, label = mylabel, main = "Fruits")
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_pie_label.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Colors: </u></h1>
+<h3 class="d_highlight">
+  You can add a color to each pie with the col parameter:
+</h3><h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          # Create a vector of colors
+          colors <- c("blue", "yellow", "green", "black")
+
+          # Display the pie chart with colors
+          pie(x, label = mylabel, main = "Fruits", col = colors)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_pie_col.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+c<h1><u>Legend: </u></h1>
+<h3 class="d_highlight">
+  To add a list of explanation for each pie, use the legend() function:
+</h3><h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          # Create a vector of labels
+          mylabel <- c("Apples", "Bananas", "Cherries", "Dates")
+
+          # Create a vector of colors
+          colors <- c("blue", "yellow", "green", "black")
+
+          # Display the pie chart with colors
+          pie(x, label = mylabel, main = "Pie Chart", col = colors)
+
+          # Display the explanation box
+          legend("bottomright", mylabel, fill = colors)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_pie_legend.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h2 class="b_highlight">R Bar Charts: </h2>
+<h3 class="d_highlight">
+  A bar chart uses rectangular bars to visualize data. Bar charts can be displayed horizontally or vertically. The height or length of the bars are proportional to the values they represent.
+
+Use the barplot() function to draw a vertical bar chart:
+</h3>
+</h3><h2><u>Example: **</u></h2>
+  <table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          # x-axis values
+          x <- c("A", "B", "C", "D")
+
+          # y-axis values
+          y <- c(2, 4, 6, 8)
+
+          barplot(y, names.arg = x)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_bar.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h3 class="d_highlight">
+  The x variable represents values in the x-axis (A,B,C,D)
+The y variable represents values in the y-axis (2,4,6,8)
+Then we use the barplot() function to create a bar chart of the values
+names.arg defines the names of each observation in the x-axis
+</h3>
+<h1><u>Bar Color: </u></h1>
+<h3 class="d_highlight">Use the col parameter to change the color of the bars:</h3>
+<h2><u>Example: **</u></h2>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          x <- c("A", "B", "C", "D")
+          y <- c(2, 4, 6, 8)
+
+          barplot(y, names.arg = x, col = "red")
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_bar_col.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Bar Width: </u></h1>
+<h3 class="d_highlight">Use the width parameter to change the width of the bars:</h3>
+<h2>Example: **</h2>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          x <- c("A", "B", "C", "D")
+          y <- c(2, 4, 6, 8)
+
+          barplot(y, names.arg = x, width = c(1,2,3,4))
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_bar_width.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h1><u>Horizontal Bars: </u></h1>
+<h3 class="d_highlight">If you want the bars to be displayed horizontally instead of vertically, use horiz=TRUE:</h3>
+<h2>Example: **</h2>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          x <- c("A", "B", "C", "D")
+          y <- c(2, 4, 6, 8)
+
+          barplot(y, names.arg = x, horiz = TRUE)
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="r_bar_hor.png" height="300" width="300">
+    </td>
+  </tr>
+</table>
+<h2 class="b_highlight">R Statistics</h2>
+<h3 class="d_highlight">
+  Statistics is the science of analyzing, reviewing and conclude data.
+
+Some basic statistical numbers include:
+<ul>
+<li>Mean, median and mode</li>
+<li>Minimum and maximum value</li>
+<li>Percentiles</li>
+<li>Variance and Standard Devation</li>
+<li>Covariance and Correlation</li>
+<li>Probability distributions</li>
+The R language was developed by twostatisticians. It has many built-in functionalities, in addition to libraries for the exact purpose of statistical analysis.
+</ul>
+You will learn about these features, and how to use them in the next chapters.
+</h3>
+<h1><u>Data Set</u></h1>
+<h3 class="d_highlight">
+  A data set is a collection of data, often presented in a table.
+
+There is a popular built-in data set in R called "mtcars" (Motor Trend Car Road Tests), which is retrieved from the 1974 Motor Trend US Magazine.
+
+In the examples below (and for the next chapters), we will use the mtcars data set, for statistical purposes:
+</h3><h2><u>Example: **</u></h2>
+<pre><code>
+  # Print the mtcars data set
+  mtcars
+</code></pre>
+<h2><u>Result: **</u></h2>
+<table align="center">
+  <tr>
+    <td>
+      <img src="st_r1.jpeg.png" height="1100" width="1500">
+    </td>
+  </tr>
+</table>
+<h1><u>Information about DataSet: </u></h1>
+<h2><u>Example: **</u></h2>
+<table align="center">
+  <tr>
+    <td>
+      <pre><code>
+          # Use the question mark to get information about the data set
+
+          ?mtcars
+      </code></pre>
+    </td>
+  </tr>
+  <tr>  
+    <td align="center">
+      <img src="st_r2.png.png" height="1100" width="1500">
+    </td>
+  </tr>
+</table>
+<h1><u>Get Information: </u></h1>
+<h3 class="d_highlight">
+  Use the dim() function to find the dimensions of the data set, and the names() function to view the names of the variables:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars # create a variable of the mtcars data set for better organization
+
+  # Use dim() to find the dimension of the data set
+  dim(Data_Cars)
+
+  # Use names() to find the names of the variables from the data set
+  names(Data_Cars)
+</code></pre>
+<h2><u>Result: </u></h2>
+<pre><code>
+[1] 32 11
+[1] "mpg"  "cyl"  "disp" "hp"   "drat" "wt"   "qsec" "vs"   "am"   "gear"
+[11] "carb"
+</code></pre>
+<h3 class="d_highlight">
+  Use the rownames() function to get the name of each row in the first column, which is the name of each car:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  rownames(Data_Cars)
+</code></pre>
+<h2><u>Result: **</u></h2>
+<pre><code>
+   [1] "Mazda RX4"           "Mazda RX4 Wag"       "Datsun 710"         
+   [4] "Hornet 4 Drive"      "Hornet Sportabout"   "Valiant"            
+   [7] "Duster 360"          "Merc 240D"           "Merc 230"           
+  [10] "Merc 280"            "Merc 280C"           "Merc 450SE"         
+  [13] "Merc 450SL"          "Merc 450SLC"         "Cadillac Fleetwood" 
+  [16] "Lincoln Continental" "Chrysler Imperial"   "Fiat 128"           
+  [19] "Honda Civic"         "Toyota Corolla"      "Toyota Corona"      
+  [22] "Dodge Challenger"    "AMC Javelin"         "Camaro Z28"         
+  [25] "Pontiac Firebird"    "Fiat X1-9"           "Porsche 914-2"      
+  [28] "Lotus Europa"        "Ford Pantera L"      "Ferrari Dino"       
+  [31] "Maserati Bora"       "Volvo 142E"     
+</code></pre>
+<h1><u>Print Variable Values: </u></h1>
+<h3 class="d_highlight">
+  If you want to print all values that belong to a variable, access the data frame by using the $ sign, and the name of the variable (for example cyl (cylinders)):
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  Data_Cars$cyl
+</code></pre>
+<h1><u>Sort Variable Values: </u></h1>
+<h3 class="d_highlight">
+  Sort Variable Values
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  sort(Data_Cars$cyl)
+</code></pre>
+<h2 class="b_highlight">R Max and Min</h2>
+<h3 class="d_highlight">
+  In the previous chapter, we introduced the mtcars data set. We will continue to use this data set throughout the next pages.
+
+You learned from the R Math chapter that R has several built-in math functions. For example, the min() and max() functions can be used to find the lowest or highest value in a set:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  max(Data_Cars$hp)
+  min(Data_Cars$hp)
+  
+  #Output
+  #[1] 335
+  #[1] 52
+</code></pre>
+<h2 class="b_highlight">R Mean</h2>
+<h1><u>Mean, Median, and Mode: </u></h1>
+<h3 class="d_highlight">
+  In statistics, there are often three values that interests us:
+  <ul>
+<li>Mean - The average value</li>
+<li>Median - The middle value</li>
+<li>Mode - The most common value</li>
+</ul>
+</h3>
+<h1><u>Mean: </u></h1>
+<h3 class="d_highlight">
+  To calculate the average value (mean) of a variable from the mtcars data set, find the sum of all values, and divide the sum by the number of values.<br>
+  Luckily for us, the mean() function in R can do it for you:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  mean(Data_Cars$wt)
+  #Output
+  #[1] 3.21725
+</code></pre>
+<h1><u>Median: </u></h1>
+<h3 class="d_highlight">
+  The median value is the value in the middle, after you have sorted all the values.
+
+If we take a look at the values of the wt variable (from the mtcars data set), we will see that there are two numbers in the middle:
+</h3>
+<h2><u>Exampl: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  median(Data_Cars$wt)
+  #Output
+  #[1] 3.325
+</code></pre>
+<h1><u>Mode: </u></h1>
+<h3 class="d_highlight">
+  The mode value is the value that appears the most number of times.
+
+R does not have a function to calculate the mode. However, we can create our own function to find it.
+
+If we take a look at the values of the wt variable (from the mtcars data set), we will see that the numbers 3.440 are often shown:
+</h3>
+<h2><u>Exampl: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  names(sort(-table(Data_Cars$wt)))
+  
+  #Output
+  #[1] "3.44"
+</code></pre>
+<h2 class="b_highlight">R Percentiles</h2>
+<h3 class="d_highlight">
+  Percentiles are used in statistics to give you a number that describes the value that a given percent of the values are lower than.
+
+If we take a look at the values of the wt (weight) variable from the mtcars data set:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  # c() specifies which percentile you want
+  quantile(Data_Cars$wt, c(0.75))
+
+  #Output
+  #75% 
+  #3.61
+</code></pre>
+<h3 class="d_highlight">
+  If you run the quantile() function without specifying the c() parameter, you will get the percentiles of 0, 25, 50, 75 and 100:
+</h3>
+<h2><u>Example: **</u></h2>
+<pre><code>
+  Data_Cars <- mtcars
+
+  quantile(Data_Cars$wt)
+
+  #Output
+  #     0%     25%     50%     75%    100% 
+  #   1.51300 2.58125 3.32500 3.61000 5.42400 
+</code></pre>
+<h1><u>Quartiles: </u></h1>
+<h3 class="d_highlight">
+  Quartiles are data divided into four parts, when sorted in an ascending order:
+<ul>
+<li>The value of the first quartile cuts off the first 25% of the data</li>
+<li>The value of the second quartile cuts off the first 50% of the data</li>
+<li>The value of the third quartile cuts off the first 75% of the data</li>
+<li>The value of the fourth quartile cuts off the 100% of the data</li>
+</ul>
+</h3>
+  <h2 align="center">
+    <a href="#start">
+      <mark>Click Here To Reach Page Starting</mark>
+    </a>
+  </h2>
+  <hr noshade="5" size="10">
+  <h1 align="center" style="font-family: cursive; color:black;">END OF THE PAGE...//...:)</h1>
+  <hr noshade="5" size="10">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>
+  hljs.highlightAll();
+  </script>
+</body>
+
+</html>
